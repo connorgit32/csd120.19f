@@ -1,1 +1,21 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
+body {
+    background-color: #658DF3
+}
+
+h1, h2, h3 {
+    color: #0447F1
+}
+
+li a {
+    color: #9FB8F6
+}
+
+.byline {
+    color: rgb(4, 71, 241);
+    color: rgba(4, 71, 241, 0.5);
+}
+
+#page-copyright {
+    color: #0447F1;
+}
