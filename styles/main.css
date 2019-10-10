@@ -1,26 +1,54 @@
 @charset "UTF-8";
+
+nav ul li {
+    list-style-type: none;
+}
+
+main ul li {
+    list-style-type: upper-roman;
+}
+
 body {
-    background-color: #658DF3
+    background-color: #658DF3;
+    
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h2, h3 {
     color: #0447F1;
 }
 
-h1.bgimg, h2.bgimg {
+h1, h2 {
     background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
+    
+    font-family: 'Libre Baskerville', serif;
 }
 
 a {
-    color: #9FB8F6
+    color: #9FB8F6;
+    text-decoration: none;
 }
 
 .byline {
     color: rgb(4, 71, 241);
     color: rgba(4, 71, 241, 0.5);
+    font-size: 70%;
+    
+}
+
+
+.bio {
+    text-indent: 3em;
 }
 
 #page-copyright {
     color: #0447F1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
 }
