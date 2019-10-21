@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li {
     list-style-type: none;
 }
@@ -8,23 +13,34 @@ main ul li {
     list-style-type: upper-roman;
 }
 
+figure img { 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5)
+}
 body {
     background-color: #658DF3;
     
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1, h2, h3 {
-    color: #0447F1;
-}
-
 h1, h2 {
     background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
-    
     font-family: 'Libre Baskerville', serif;
 }
 
+h1, h2, h3 {
+    color: #0447F1;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    background: rgb(0,31,255);
+    background: linear-gradient(0deg, rgba(0,31,255,1) 0%, rgba(99,118,255,1) 30%, rgba(255,255,255,1) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
 a {
     color: #9FB8F6;
     text-decoration: none;
@@ -42,6 +58,22 @@ a {
     text-indent: 3em;
 }
 
+.width-wrap {
+    background-color: #878f99;
+    margin: auto;
+    max-width: 1024px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 3em;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
 #page-copyright {
     color: #0447F1;
     text-transform: uppercase;
@@ -51,4 +83,17 @@ a {
 footer {
     text-align: center;
     font-size: 12px;
+    margin-bottom: 2em;
+}
+
+footer hr {
+    width: 50%;
+    width: 50vw;
+    min-width: 300px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-top: 3px solid #003366;
+    border-bottom: 8px dotted #003366;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
