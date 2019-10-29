@@ -94,6 +94,8 @@ footer hr {
     margin-bottom: 2em;
     border-top: 3px solid #003366;
     border-bottom: 8px dotted #003366;
+    border-left: none;
+    border-right: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
