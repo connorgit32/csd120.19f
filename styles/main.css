@@ -1,21 +1,67 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+}
+
 header nav ul {
     margin: 0;
     padding: 0;
+    float: right;
+}
+
+header nav {
+    overflow: auto;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: -4px;
+    border-bottom: 1px dotted rgb(0,0,0);
+    border-bottom: 1px dotted rgba(0,0,0,0.3);
+}
+
+header {
+    border-top: 4px solid rgb(0,0,0);
+    border-top: 4px solid rgba(0,0,0,0.1);
+    margin-right: -2em;
+    margin-left: -2em;
 }
 
 nav ul li {
     list-style-type: none;
+    float: left;
 }
 
+nav ul li a {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: block;
+    border: 4px solid transparent;
+}
+
+nav ul li a:hover {
+    border-top: 4px solid rgb(0,0,204)
+}
 main ul li {
     list-style-type: upper-roman;
 }
 
 figure img { 
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5)
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
 }
+
+
+.mugshot {
+    position: relative;
+    float: right;
+    top: -1em;
+}    
+   
+.mythreefav {
+    clear: right;
+}   
+
 body {
     background-color: #658DF3;
     
@@ -36,10 +82,10 @@ h1, h2, h3 {
 h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     background: rgb(0,31,255);
-    background: linear-gradient(0deg, rgba(0,31,255,1) 0%, rgba(99,118,255,1) 30%, rgba(255,255,255,1) 100%);
-    background-clip: text;
+    background: linear-gradient(0deg, rgba(0,31,255,1) 0%, rgba(99,118,255,1) 30%, rgba(255,255,255,1) 100%); 
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 a {
     color: #9FB8F6;
@@ -53,10 +99,11 @@ a {
     
 }
 
-
+/* Making the welcome paragraph and h1 look bad.
 .bio {
     text-indent: 3em;
 }
+*/
 
 .width-wrap {
     background-color: #878f99;
@@ -94,6 +141,34 @@ footer hr {
     margin-bottom: 2em;
     border-top: 3px solid #003366;
     border-bottom: 8px dotted #003366;
+    border-left: none;
+    border-right: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+
+.paperclip {
+    background-image: url("../images/paperclip.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    top: -10px;
+    right: -7px;
+    position: absolute;
+}
+
+.back-to-top a {
+    bottom: 3.5em;
+    position: fixed;
+}
+
+.back-to-top {
+    text-align: right;
+    margin-right: -0.5em;
+    opacity: 0.5;
+}
+
+.back-to-top:hover {
+    opacity: 1;
 }
