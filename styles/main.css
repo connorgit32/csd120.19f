@@ -113,6 +113,10 @@ a {
     text-indent: 3em;
     grid-column: 1 / span 2;
 }
+#useful-links,
+.glossary {
+    grid-column: 1 / span 2;
+}
 
 
 .width-wrap {
