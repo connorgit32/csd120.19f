@@ -224,6 +224,59 @@ img {
     height: auto;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+
+th, td {
+    background: rgba(0,0,0,0.05);
+    padding: 0.3em 1em 0.3em 1em;
+    border-left: 3px solid #878f99;
+    border-right: 3px solid #878f99;
+}
+
+tr:nth-of-type(odd) td {
+    background: rgba(0,0,0,0.1)
+}
+                    
+th {
+    background: rgba(0,0,0,0.1);
+}
+
+.tabletopborder {
+    border-top: 3px solid #878f99;
+}
+
+.survey {
+    grid-column: span 2;
+}
+
+form {
+    display: grid;
+    
+}
+
+label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#send {
+    margin-top: 1em;
+    justify-self: end;
+    font-size: 24px;
+    padding: 1em 2em 1em 2em;
+    border: 2px outset aqua;
+    color: navy;
+    background-color: rgba(57, 172, 255, 0.3);
+}
+
+#burger-toggle {
+    display: none;
+}
+
+
 
 /* Media Queries */
 
@@ -254,9 +307,11 @@ img {
     
     header nav ul {
         flex-direction: column;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
         text-align: center;
+        height: 0;
+        overflow: hidden;
     }
     
     header nav ul li a {
@@ -275,6 +330,7 @@ img {
         margin-left: auto;
         margin-right: auto;
         margin-top: 1em;
+        display: block;
         }
     
     .burger::before,
@@ -298,6 +354,12 @@ img {
     .burger::after {
         top: 14px;
         }
+
+}
+   
+        
+        
+        
 }
 
 

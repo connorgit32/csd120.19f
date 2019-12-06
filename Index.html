@@ -27,7 +27,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
-                <div class="burger"></div>
+                <label for="burger-toggle" class="burger"></label>
+                <input type="checkbox" name="burger-toggle" id="burger-toggle">
                     <ul>
                         <li><a href="Index.html">Home</a></li>
                         <li><a href="Links.html">Links</a></li>
@@ -57,7 +58,7 @@
             <ol>
                 <li>Super Smash Brothers</li>
                 <li>Starcraft 2</li>
-                <li>Divinity</li>
+                <li>Onward</li>
             </ol>
         </section>
         
@@ -70,6 +71,28 @@
                     <span class="byline"><em>by <strong>Basho (1644-1694)</strong></em></span>
                 </p>
         </section> 
+        
+        
+        <section>
+        
+            <h2>My Sault College Courses</h2>
+            <table>
+                <tr> <th>Term</th> <th>Code</th> <th>Course Name</th> </tr>
+                <tr class="tabletopborder"> <th rowspan="5">Fall</th> <td>CSD105</td> <td>Python</td> </tr>
+                <tr>               <td>CSD120</td> <td>Introduction to Web Development</td> </tr>
+                <tr>               <td>CSO104</td> <td>Introduction to Operating Systems and LAN</td> </tr>
+                <tr>               <td>MTH122</td> <td>Computer Mathematics</td> </tr>
+                <tr>               <td>TNY130</td> <td>Technology in Society</td> </tr>
+                <tr class="tabletopborder"><th rowspan="5">Winter</th><td>CSA103</td> <td>Business ApplicationsM</td> </tr>
+                <tr>               <td>CSD102</td> <td>Programming Using C++</td> </tr>
+                <tr>               <td>CSD212</td> <td>Web Scripting Languages</td> </tr>
+                <tr>               <td>CSO102</td> <td>Introduction to Linux</td> </tr>
+                <tr>               <td>CST104</td> <td>PC Hardware & Networking</td> </tr>
+            
+            </table>
+            
+        </section>
+        
         
         <section class="gallery">
             <h2>Photo Gallery</h2>
@@ -92,6 +115,40 @@
                     <a href="https://picsum.photos/id/1074/1024"><img src="https://picsum.photos/id/1074/300" alt="Placeholder Image"></a>
                 </div>
         </section>
+        
+        
+        <section class="survey">
+            <h2>Survey</h2>
+                <form action="https://formspree.io/xpzwyrqe" method="post">            
+                    <label for="name_field">What is your name? </label><input type="text" name="name_field" id="name_field" required>
+                    <label for="email_field">What is your email? </label><input type="text" name="email_field" id="email_field" required>              
+                    <label for="best_integer">What integer is best? </label><input type="number" name="best_integer" id="best_integer" min="0" step="1">
+                    <label for="best_day">What day is best? </label><input type="date" name="best_day" id="best_day">
+                    <label for="best_bear">Which is the best bear?</label>
+                    
+                    <select name="best_bear" id="best_bear"> 
+                        <option></option>    
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Care">Care</option>
+                        <option value="Panda">Panda</option>
+                        <option value="Polar">Polar</option>
+                        <option value="Teddy">Teddy</option>
+                    </select>  
+                    
+                    <label>Do you like radio buttons?</label>
+                    <label><input type="radio" value="yes" name="radio">Yes</label>
+                    <label><input type="radio" value="no" name="radio">No</label>
+                    <label><input type="radio" value="?" name="radio" checked>None of your business</label>
+                    
+                    <label>What is the meaning of life?</label>
+                    <textarea rows="10">Enter the correct answer here</textarea>
+                    
+                    <input type="submit" value="SEND" id="send">
+                    
+                </form>
+        </section>
+        
         
     </main>
 
