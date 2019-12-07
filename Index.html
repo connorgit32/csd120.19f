@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <title>Connor's CSD120 Website</title>
-        
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700%7CSource+Sans+Pro&display=swap" rel="stylesheet"> 
-        
+
+        <script type="text/javascript" src="javascriptlibrary/baguetteBox.js"></script>
+        <link rel="stylesheet" type="text/css" href="javascriptlibrary/baguetteBox.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700%7CSource+Sans+Pro&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-        
+
         <link rel="stylesheet" type="text/css" href="styles/main.css">
-        
+
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -27,32 +30,32 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
-                <label for="burger-toggle" class="burger"></label>
                 <input type="checkbox" name="burger-toggle" id="burger-toggle">
+                <label for="burger-toggle" class="burger"></label>
                     <ul>
                         <li><a href="Index.html">Home</a></li>
                         <li><a href="Links.html">Links</a></li>
                         <li><a href="Glossary.html">Glossary</a></li>
                     </ul>
             </nav>
-            
+
         </header>
 
     <main>
-    
-        <section class="bio">    
+
+        <section class="bio">
             <h1 class="bgimg">Welcome to Connor's CSD120 Website!</h1>
                 <figure class="mugshot">
                     <div class="paperclip">
-                    
+
                     </div>
                         <a href="images/selfie.jpg"><img src="images/selfiethumbnail.jpg" alt="Thumbnail selfie"></a>
                             <figcaption>Me</figcaption>
                 </figure>
                     <p>I'm a student at Sault College in my first year of the Computer Programming course. I am new to programming.</p>
-                    <p>I have a son and a girlfriend. I like going to the gym and playing in Super Smash Brothers tournaments.</p> 
-        </section>   
-        
+                    <p>I have a son and a girlfriend. I like going to the gym and playing in Super Smash Brothers tournaments.</p>
+        </section>
+
         <section class="mythreefav">
         <h2 class="bgimg">My Three Favourite Video Games</h2>
             <ol>
@@ -61,7 +64,7 @@
                 <li>Onward</li>
             </ol>
         </section>
-        
+
         <section>
             <h2 class="bgimg">Haiku</h2>
                 <p><span style="background-color: #9FB8F6">An old silent pond...<br>
@@ -70,11 +73,11 @@
                 </span>
                     <span class="byline"><em>by <strong>Basho (1644-1694)</strong></em></span>
                 </p>
-        </section> 
-        
-        
+        </section>
+
+
         <section>
-        
+
             <h2>My Sault College Courses</h2>
             <table>
                 <tr> <th>Term</th> <th>Code</th> <th>Course Name</th> </tr>
@@ -88,12 +91,12 @@
                 <tr>               <td>CSD212</td> <td>Web Scripting Languages</td> </tr>
                 <tr>               <td>CSO102</td> <td>Introduction to Linux</td> </tr>
                 <tr>               <td>CST104</td> <td>PC Hardware & Networking</td> </tr>
-            
+
             </table>
-            
+
         </section>
-        
-        
+
+
         <section class="gallery">
             <h2>Photo Gallery</h2>
                 <div class="gallery-thumbnails">
@@ -115,41 +118,41 @@
                     <a href="https://picsum.photos/id/1074/1024"><img src="https://picsum.photos/id/1074/300" alt="Placeholder Image"></a>
                 </div>
         </section>
-        
-        
+
+
         <section class="survey">
             <h2>Survey</h2>
-                <form action="https://formspree.io/xpzwyrqe" method="post">            
+                <form action="https://formspree.io/xpzwyrqe" method="post">
                     <label for="name_field">What is your name? </label><input type="text" name="name_field" id="name_field" required>
-                    <label for="email_field">What is your email? </label><input type="text" name="email_field" id="email_field" required>              
+                    <label for="email_field">What is your email? </label><input type="text" name="email_field" id="email_field" required>
                     <label for="best_integer">What integer is best? </label><input type="number" name="best_integer" id="best_integer" min="0" step="1">
                     <label for="best_day">What day is best? </label><input type="date" name="best_day" id="best_day">
                     <label for="best_bear">Which is the best bear?</label>
-                    
-                    <select name="best_bear" id="best_bear"> 
-                        <option></option>    
+
+                    <select name="best_bear" id="best_bear">
+                        <option></option>
                         <option value="Black">Black</option>
                         <option value="Brown">Brown</option>
                         <option value="Care">Care</option>
                         <option value="Panda">Panda</option>
                         <option value="Polar">Polar</option>
                         <option value="Teddy">Teddy</option>
-                    </select>  
-                    
+                    </select>
+
                     <label>Do you like radio buttons?</label>
                     <label><input type="radio" value="yes" name="radio">Yes</label>
                     <label><input type="radio" value="no" name="radio">No</label>
                     <label><input type="radio" value="?" name="radio" checked>None of your business</label>
-                    
+
                     <label>What is the meaning of life?</label>
                     <textarea rows="10">Enter the correct answer here</textarea>
-                    
+
                     <input type="submit" value="SEND" id="send">
-                    
+
                 </form>
         </section>
-        
-        
+
+
     </main>
 
     <footer>
@@ -159,7 +162,7 @@
                 Teach me and I remember.<br>
                 Involve me and I learn.&rdquo;<br>
                 <span class="byline"><em>&mdash;Benjamin Franklin</em></span>
-            </blockquote>  
+            </blockquote>
                 <p id="page-copyright">&copy; 2019 <a href="mailto:12021736@saultcollege.ca?subject=Message%20from%20CSD120%20Website">Connor Moore</a></p>
                 <img src="images/sc-logo.png" sizes="70px" srcset="images/sc-logo@4x.png 280w, images/sc-logo@3x.png 210w, images/sc-logo@2x.png 140w, images/sc-logo@1.5x.png 105w" alt="Sault College logo">
     </footer>
@@ -167,5 +170,12 @@
             <a href="#top" title="Back to top">◤</a>
         </div>
     </div><!-- closing .width-wrap -->
+
+    <script>
+        baguetteBox.run('.gallery-thumbnails', {
+        filter: /picsum\.photos\/id/i
+        });
+    </script>
+
 </body>
-</html> 
+</html>

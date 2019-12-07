@@ -55,7 +55,7 @@ main {
     grid-column-gap: 2em;
 }
 
-figure img { 
+figure img {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
 }
 
@@ -64,11 +64,11 @@ figure img {
     position: relative;
     float: right;
     top: -1em;
-}    
-   
+}
+
 .mythreefav {
     clear: right;
-}   
+}
 
 body {
     background-color: #658DF3;
@@ -85,13 +85,13 @@ h1, h2 {
 
 h1, h2, h3 {
     color: #0447F1;
-    
+
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     background: rgb(0,31,255);
-    background: linear-gradient(0deg, rgba(0,31,255,1) 0%, rgba(99,118,255,1) 30%, rgba(255,255,255,1) 100%); 
+    background: linear-gradient(0deg, rgba(0,31,255,1) 0%, rgba(99,118,255,1) 30%, rgba(255,255,255,1) 100%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -105,7 +105,7 @@ a {
     color: rgb(4, 71, 241);
     color: rgba(4, 71, 241, 0.5);
     font-size: 70%;
-    
+
 }
 
 
@@ -239,7 +239,7 @@ th, td {
 tr:nth-of-type(odd) td {
     background: rgba(0,0,0,0.1)
 }
-                    
+
 th {
     background: rgba(0,0,0,0.1);
 }
@@ -254,7 +254,7 @@ th {
 
 form {
     display: grid;
-    
+
 }
 
 label {
@@ -281,30 +281,30 @@ label {
 /* Media Queries */
 
 @media (max-width: 768px){
-    
+
     footer hr {
         display: none;
     }
-    
+
     .paperclip {
         display: none;
     }
-    
+
     .mugshot {
         float: none;
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     main {
         display: block;
     }
-    
+
     .row-span-2.col-span-2 {
         grid-row: span 1;
         grid-column: span 1;
     }
-    
+
     header nav ul {
         flex-direction: column;
         margin-top: 1em;
@@ -312,54 +312,75 @@ label {
         text-align: center;
         height: 0;
         overflow: hidden;
+        transition-property: height;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
     }
-    
+
+    #burger-toggle:checked ~ ul {
+        height: 110px;
+    }
+
+    #burger-toggle:checked ~ .burger {
+        transform: rotate(45deg) translate(5px,15px);
+    }
+
+    #burger-toggle:checked ~ .burger::before {
+        opacity: 0;
+    }
+
+    #burger-toggle:checked ~ .burger::after {
+        transform: rotate(-90deg) translateX(19px);
+    }
+
     header nav ul li a {
         border-style: none;
     }
-    
+
     header nav ul li a:hover {
         border-style: none;
         text-decoration: underline;
     }
-    
+
    .burger {
         height: 25px;
-        cursor: pointer;         
-        position: relative;     
+        cursor: pointer;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
         margin-top: 1em;
         display: block;
         }
-    
+
     .burger::before,
     .burger::after {
-        content: "";            
-        display: block;           
-        position: absolute;     
+        content: "";
+        display: block;
+        position: absolute;
         }
-        
+
     .burger,
     .burger::before,
     .burger::after {
         width: 40px;
         border-top: 5px solid blue;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
         }
-        
+
     .burger::before {
-        top: 5px; 
+        top: 5px;
         }
-        
+
     .burger::after {
         top: 14px;
         }
 
 }
-   
-        
-        
-        
+
+
+
+
 }
 
 
