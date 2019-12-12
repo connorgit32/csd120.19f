@@ -124,7 +124,7 @@
             <h2>Survey</h2>
                 <form action="https://formspree.io/xpzwyrqe" method="post">
                     <label for="name_field">What is your name? </label><input type="text" name="name_field" id="name_field" required>
-                    <label for="email_field">What is your email? </label><input type="text" name="email_field" id="email_field" required>
+                    <label for="email_field">What is your email? </label><input type="email" name="email_field" id="email_field" required>
                     <label for="best_integer">What integer is best? </label><input type="number" name="best_integer" id="best_integer" min="0" step="1">
                     <label for="best_day">What day is best? </label><input type="date" name="best_day" id="best_day">
                     <label for="best_bear">Which is the best bear?</label>
@@ -144,8 +144,8 @@
                     <label><input type="radio" value="no" name="radio">No</label>
                     <label><input type="radio" value="?" name="radio" checked>None of your business</label>
 
-                    <label>What is the meaning of life?</label>
-                    <textarea rows="10">Enter the correct answer here</textarea>
+                    <label for="life_meaning">What is the meaning of life?</label>
+                    <textarea rows="10" name="life_meaning" id="life_meaning" placeholder="Enter the correct answer here"></textarea>
 
                     <input type="submit" value="SEND" id="send">
 
